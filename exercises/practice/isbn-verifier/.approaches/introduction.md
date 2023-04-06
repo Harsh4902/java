@@ -1,6 +1,6 @@
 # Introduction
 
-There ae at least a couple general ways to solve ISBN Verifier.
+There are at least a couple general ways to solve ISBN Verifier.
 One approach is to scrub and validate the input first.
 A variation of that approach could then use [`map()`][map] and [`sum()`][sum] to iterate to the result.
 Another approach is to validate as you go.
@@ -118,7 +118,7 @@ Since benchmarking with the [Java Microbenchmark Harness][jmh] is currently outs
 the choice between the approaches can be made by perceived readability.
 
 It might be thought that iterating to [`replace()`][replace] dash characters and then iterating again to check
-a [regular expression patttern][pattern] might be less efficient than validating as you go,
+a [regular expression pattern][pattern] might be less efficient than validating as you go,
 but the string to be iterated is so short that it may not matter much.
 
 An advantage to the `for-each` loop approach is that the function can return `false` immediately upon encountering an illegal character.
